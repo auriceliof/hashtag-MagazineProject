@@ -1,10 +1,11 @@
 import React from 'react'
 import ProductsContainer from './ProductsContainer'
+import ProductFilters from './ProductFilters'
 
 const MainSection = () => {
   return (
     <>
-     <h1>Filtros</h1>
+     <ProductFilters />
      <ProductsContainer />
     </>
   )
