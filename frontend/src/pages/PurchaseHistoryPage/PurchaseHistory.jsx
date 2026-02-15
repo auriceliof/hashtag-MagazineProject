@@ -1,11 +1,3 @@
-import React from 'react'
+const PurchaseHistory = () => {};
 
-const PurchaseHistory = () => {
-  return (
-    <div>
-      Bem-vindo à página de Historico de Compras
-    </div>
-  )
-}
-
-export default PurchaseHistory
+export default PurchaseHistory;

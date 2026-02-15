@@ -1,11 +1,5 @@
-import React from 'react'
-
 const Checkout = () => {
-  return (
-    <div>
-      Bem-vindo à página de Checkout
-    </div>
-  )
-}
+  return <h1>Bem-vindo à página de checkout</h1>;
+};
 
-export default Checkout
+export default Checkout;
