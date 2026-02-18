@@ -8,10 +8,20 @@ import { CartContext } from './contexts/CartContext';
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const [cartItem, setCartItem] = useState({});
+  const [cartItems, setCartItems] = useState({});
+
+  const toggleCartOpen = () => setIsCartOpen(!isCartOpen);
+
+  const addToCart = (productId) => {
+    setCartItems({
+      ...cartItems,
+      [productId]: (cartItems[productId] ?? 0) + 1,
+    });
+  };
 
   return (
-    <CartContext.Provider value={{ isCartOpen, setIsCartOpen, cartItem, setCartItem}}>
+    <CartContext.Provider
+      value={{ isCartOpen, toggleCartOpen, cartItems, addToCart }}>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
