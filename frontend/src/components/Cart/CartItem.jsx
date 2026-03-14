@@ -15,7 +15,7 @@ const CartItem = ({ id, amount }) => {
       />
       <button
         onClick={() => removeFromCart(id)}
-        className="text-right text-l fixed absolute top-0 right-2 text-slate-950"
+        className="text-right text-l absolute top-0 right-2 text-slate-500  hover:text-slate-900"
       >
         <FontAwesomeIcon icon={faXmark} />
       </button>
